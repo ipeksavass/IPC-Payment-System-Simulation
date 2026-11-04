@@ -1,0 +1,12 @@
+# IDE ve Yerel Ayarlar
+*.iml
+/.idea/
+/local.properties
+/.DS_Store
+
+# Gradle ve Derleme (Build) Çıktıları
+.gradle/
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
