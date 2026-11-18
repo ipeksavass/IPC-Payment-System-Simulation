@@ -6,6 +6,7 @@ import com.ipeksavas.adminservice.data.AppDatabase;
 import com.ipeksavas.adminservice.data.dao.ReceiptDao;
 import com.ipeksavas.adminservice.data.entity.Receipt;
 import com.ipeksavas.adminservice.data.entity.ReceiptItem;
+import com.ipeksavas.adminservice.data.entity.ReceiptWithItems;
 import com.ipeksavas.adminservice.domain.repository.ReceiptRepository;
 
 import java.util.List;
@@ -34,5 +35,15 @@ public class ReceiptRepositoryImpl implements ReceiptRepository {
     @Override
     public void deleteReceiptById(int id) {
         receiptDao.deleteReceiptById(id);
+    }
+    
+    @Override
+    public List<ReceiptWithItems> getTransactionsByDate(String date) {
+        return receiptDao.getTransactionsByDate(date);
+    }
+    
+    @Override
+    public void updateReceiptStatus(int receiptId, String newStatus) {
+        receiptDao.updateReceiptStatus(receiptId, newStatus);
     }
 }
