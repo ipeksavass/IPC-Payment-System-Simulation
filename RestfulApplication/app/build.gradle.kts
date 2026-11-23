@@ -57,4 +57,13 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+    
+    //by ipeksavas
+    implementation("com.google.code.gson:gson:2.11.0")
+    
+    implementation("androidx.navigation:navigation-compose:2.8.5")
+    
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+    
+    implementation("androidx.compose.material:material-icons-extended")
 }
